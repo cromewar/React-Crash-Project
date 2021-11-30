@@ -7,13 +7,12 @@ import { FavoritesPage } from "./pages/Favorites";
 
 // Components
 
-import { MainNavigation } from "./components/layout/MainNavigation";
+import { Layout } from "./components/layout/Layout";
 
 function App() {
   // for development the route is localhost:3000
   return (
-    <div>
-      <MainNavigation />
+    <Layout>
       <Routes>
         <Route path="/" element={<AllMeetupsPage />} />
 
@@ -21,7 +20,7 @@ function App() {
 
         <Route path="/favorites" element={<FavoritesPage />} />
       </Routes>
-    </div>
+    </Layout>
   );
 }
 
